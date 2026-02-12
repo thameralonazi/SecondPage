@@ -9982,3 +9982,72 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar-light .navbar-brand h1 {
+    color: #ffffff;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6,
+body.dark-mode .h1, 
+body.dark-mode .h2, 
+body.dark-mode .h3, 
+body.dark-mode .h4, 
+body.dark-mode .h5, 
+body.dark-mode .h6 {
+    color: #ffffff;
+}
+
+body.dark-mode .text-secondary {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .display-1 {
+    color: #2c2c2c !important;
+    -webkit-text-stroke: 1px #444 !important;
+}
+
+body.dark-mode .progress {
+    background-color: #333;
+}
+
+body.dark-mode .modal-content {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .close {
+    color: #ffffff;
+    text-shadow: none;
+}
+
+body.dark-mode .bg-white {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .border-left {
+    border-color: #444 !important;
+}
+
+/* Smooth transition for theme switching */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
