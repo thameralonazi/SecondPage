@@ -113,6 +113,13 @@
         items: 1
     });
 
+    // Animate Blog Cards on Scroll
+    if ($('.card').length > 0) {
+        $('.card').waypoint(function () {
+            $(this.element).addClass('fadeInUp');
+        }, {offset: '80%'});
+    }
+
     // Dark Mode Toggle
     const toggleBtn = document.getElementById('dark-mode-toggle');
     const body = document.body;
