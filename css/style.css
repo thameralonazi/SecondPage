@@ -10194,3 +10194,96 @@ h1, h2, h3, h4, h5, h6,
 .progress {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
+
+/* Modal Styles for Blog Articles */
+.modal-content {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #0BCEAF, #078571);
+    color: white;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-header .modal-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.modal-header .close {
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+.modal-body h6 {
+    color: #0BCEAF;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.modal-body ul {
+    margin-left: 1.5rem;
+}
+
+.modal-body li {
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+/* Dark Mode Modal Styles */
+body.dark-mode .modal-content {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+body.dark-mode .modal-body {
+    background-color: #2c2c2c;
+    color: #b0b0b0;
+}
+
+body.dark-mode .modal-body h6 {
+    color: #0BCEAF;
+}
+
+body.dark-mode .modal-body li {
+    color: #b0b0b0;
+}
+
+body.dark-mode .modal-body strong {
+    color: #e0e0e0;
+}
+
+body.dark-mode .modal-body p strong {
+    color: #0BCEAF;
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth Modal Animation */
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}
