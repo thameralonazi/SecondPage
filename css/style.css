@@ -10287,3 +10287,134 @@ body.dark-mode .modal-body p strong {
 .modal.show .modal-dialog {
     transform: translateY(0);
 }
+
+
+/* RTL (Right-to-Left) Support for Arabic */
+body.rtl-mode {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl-mode .navbar {
+    padding-left: 0 !important;
+    padding-right: 2.5rem !important;
+}
+
+body.rtl-mode .navbar-brand {
+    margin-left: 0 !important;
+    margin-right: 1rem !important;
+}
+
+body.rtl-mode .navbar-nav {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+body.rtl-mode .nav-item {
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+}
+
+body.rtl-mode .btn {
+    margin-left: 0 !important;
+    margin-right: 0.75rem !important;
+}
+
+body.rtl-mode .ml-2 {
+    margin-left: 0 !important;
+    margin-right: 0.5rem !important;
+}
+
+body.rtl-mode .ml-3 {
+    margin-left: 0 !important;
+    margin-right: 0.75rem !important;
+}
+
+body.rtl-mode .mr-2 {
+    margin-right: 0 !important;
+    margin-left: 0.5rem !important;
+}
+
+body.rtl-mode .float-right {
+    float: left !important;
+}
+
+body.rtl-mode .float-left {
+    float: right !important;
+}
+
+body.rtl-mode .text-right {
+    text-align: left !important;
+}
+
+body.rtl-mode .text-left {
+    text-align: right !important;
+}
+
+body.rtl-mode .pl-lg-5 {
+    padding-left: 0 !important;
+    padding-right: 3rem !important;
+}
+
+body.rtl-mode .px-lg-5 {
+    padding-left: 0 !important;
+    padding-right: 3rem !important;
+}
+
+body.rtl-mode .px-lg-3 {
+    padding-left: 0 !important;
+    padding-right: 1rem !important;
+}
+
+body.rtl-mode .ml-lg-3 {
+    margin-left: 0 !important;
+    margin-right: 1rem !important;
+}
+
+/* Language Toggle Button */
+#lang-toggle {
+    transition: all 0.3s ease;
+    font-weight: bold;
+    min-width: 50px;
+}
+
+#lang-toggle:hover {
+    transform: scale(1.1);
+    background-color: #0BCEAF !important;
+    color: white !important;
+}
+
+/* Dark Mode RTL Support */
+body.dark-mode.rtl-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode.rtl-mode .navbar {
+    background-color: #2c2c2c !important;
+}
+
+body.dark-mode.rtl-mode .card {
+    background-color: #2c2c2c !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode.rtl-mode .text-muted {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode.rtl-mode .text-secondary {
+    color: #999 !important;
+}
+
+/* Responsive RTL */
+@media (max-width: 991.98px) {
+    body.rtl-mode .navbar-brand {
+        margin-right: 0 !important;
+    }
+    
+    body.rtl-mode .collapse {
+        padding-right: 0 !important;
+        padding-left: 1rem !important;
+    }
+}

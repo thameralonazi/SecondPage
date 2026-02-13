@@ -35,15 +35,18 @@
         </button>
         <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
             <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Education / Expericence</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#instgramfeed" class="nav-item nav-link">Instgram</a>
-                <a href="#blog" class="nav-item nav-link">Blog</a>
+                <a href="#home" class="nav-item nav-link active" data-i18n="home">Home</a>
+                <a href="#about" class="nav-item nav-link" data-i18n="about">About</a>
+                <a href="#qualification" class="nav-item nav-link" data-i18n="education">Education / Expericence</a>
+                <a href="#skill" class="nav-item nav-link" data-i18n="skill">Skill</a>
+                <a href="#instgramfeed" class="nav-item nav-link" data-i18n="instagram">Instgram</a>
+                <a href="#blog" class="nav-item nav-link" data-i18n="blog">Blog</a>
             </div>
             <a href="https://www.linkedin.com/in/thamer-alonazi/" target="_blank" class="btn btn-outline-primary d-none d-lg-block mr-2"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:tha.alonazi@gmail.com" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+            <a href="mailto:tha.alonazi@gmail.com" class="btn btn-outline-primary d-none d-lg-block" data-i18n="hireMe">Hire Me</a>
+            <button id="lang-toggle" class="btn btn-outline-info ml-2" title="تبديل اللغة / Toggle Language">
+                <i class="fas fa-globe"></i>
+            </button>
             <button id="dark-mode-toggle" class="btn btn-outline-primary ml-3">
                 <i class="fas fa-moon"></i>
             </button>
@@ -803,6 +806,8 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
+    <!-- Language Translations -->
+    <script src="js/translations.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 

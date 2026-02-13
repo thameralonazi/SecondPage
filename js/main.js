@@ -152,3 +152,16 @@
     
 })(jQuery);
 
+
+    // Language Toggle
+    const langToggleBtn = document.getElementById('lang-toggle');
+    if (langToggleBtn) {
+        langToggleBtn.addEventListener('click', () => {
+            const currentLang = getCurrentLanguage();
+            const newLang = currentLang === 'en' ? 'ar' : 'en';
+            setLanguage(newLang);
+            
+            // Update button text
+            langToggleBtn.innerHTML = '<i class="fas fa-globe"></i> ' + (newLang === 'en' ? 'العربية' : 'English');
+        });
+    }
