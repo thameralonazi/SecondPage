@@ -62,17 +62,27 @@
             align-items: center;
             flex-wrap: nowrap;
         }
+        @media (max-width: 768px) {
+            .icon-container {
+                flex-wrap: wrap;
+            }
+            .nav-icon-btn {
+                min-width: 80px;
+                padding: 12px;
+                margin: 10px;
+            }
+        }
         @media (max-width: 576px) {
             .nav-icon-btn {
-                min-width: 75px;
+                min-width: 70px;
                 padding: 10px;
-                margin: 0 5px;
+                margin: 5px;
             }
             .nav-icon-btn i {
                 font-size: 1.4rem;
             }
             .nav-icon-btn span {
-                font-size: 0.7rem;
+                font-size: 0.65rem;
             }
         }
     </style>
@@ -93,6 +103,7 @@
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="blog.html" class="nav-item nav-link">Blog</a>
                 <a href="projects.html" class="nav-item nav-link">Projects</a>
+                <a href="ai-tools.html" class="nav-item nav-link">AI Tools</a>
             </div>
             <a href="https://www.linkedin.com/in/thamer-alonazi/" target="_blank" class="btn btn-outline-primary d-none d-lg-block mr-2"><i class="fab fa-linkedin-in"></i></a>
             <a href="mailto:tha.alonazi@gmail.com" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
@@ -142,6 +153,12 @@
                             <span>About</span>
                         </a>
                         
+                        <!-- Blog Icon -->
+                        <a href="blog.html" class="nav-icon-btn">
+                            <i class="fas fa-blog"></i>
+                            <span>Blog</span>
+                        </a>
+
                         <!-- Video Play Button -->
                         <div class="mx-2">
                             <button type="button" class="btn-play" data-toggle="modal"
@@ -150,16 +167,16 @@
                             </button>
                         </div>
                         
-                        <!-- Blog Icon -->
-                        <a href="blog.html" class="nav-icon-btn">
-                            <i class="fas fa-blog"></i>
-                            <span>Blog</span>
-                        </a>
-                        
                         <!-- Projects Icon -->
                         <a href="projects.html" class="nav-icon-btn">
                             <i class="fas fa-project-diagram"></i>
                             <span>Projects</span>
+                        </a>
+
+                        <!-- AI Tools Icon -->
+                        <a href="ai-tools.html" class="nav-icon-btn">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Tools</span>
                         </a>
                     </div>
                 </div>
