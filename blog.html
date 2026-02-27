@@ -249,6 +249,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Include Modals -->
+    <div id="modals-container"></div>
+    <script>
+        // Load modals from modals.html
+        fetch('modals.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('modals-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading modals:', error));
+    </script>
     <script>
         // Dark Mode Toggle
         document.getElementById("dark-mode-toggle").addEventListener("click", function() {
